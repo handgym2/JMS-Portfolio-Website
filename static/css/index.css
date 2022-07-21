@@ -35,6 +35,12 @@ body {
 	font-weight:normal;
 	font-style:normal;
 }
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @keyframes fadeInUp {
 	0% {
 		opacity:0;
@@ -79,9 +85,9 @@ body {
 	position:absolute;
 	color:transparent;
 	user-select:none;
-	font-family:'D2Coding',monospace;
 	font-size:19px;
 	/* color:white;*/
+	font-family:'D2Coding',monospace;
 	word-break:break-word;
 	border-color:inherit;
 	border-style:solid;
@@ -97,7 +103,7 @@ body {
 	content:"Thank you for visited website";
 	position:absolute;
 	color:white;
-	overflow:scroll;
+	overflow:hidden;
 	padding:10px;
 	/* border-right:1px solid white;*/
 	animation:typing 4s steps(40) 1;
@@ -143,7 +149,7 @@ body {
 .context2::before {
 	user-select:none;
 	position:absolute;
-	overflow:scroll;
+	overflow:hidden;
 	padding:10px;
 	/* border-right:1px solid white;*/
 	animation:typing 3.5s steps(40) 1;
@@ -191,7 +197,7 @@ body {
 .context3::before {
 	user-select:none;
 	position:absolute;
-	overflow:scroll;
+	overflow:hidden;
 	padding:10px;
 	/* border-right:1px solid white;*/
 	animation:typing 3.5s steps(40) 1;
@@ -239,7 +245,7 @@ body {
 .context4::before {
 	user-select:none;
 	position:absolute;
-	overflow:scroll;
+	overflow:hidden;
 	padding:10px;
 	/* border-right:1px solid white;*/
 	animation:typing 3.5s steps(40) 1;
@@ -263,23 +269,7 @@ body {
 		color:white;
 	}
 }
-@keyframes blink {
-	0% {
-		opacity:0;
-	}
-	40% {
-		opacity:0;
-	}
-	50% {
-		opacity:1;
-	}
-	90% {
-		opacity:1;
-	}
-	100% {
-		opacity:0;
-	}
-}
+
 @keyframes hide {
 	0% {
 		opacity:0;
@@ -415,7 +405,7 @@ table {
 	position:relative;
 	text-align:center;
 	top:-30px;
-	font-family: 'SBAggroB';
+	/* font-family: 'SBAggroB'; */
 }
 .contact_group {
 	/* transform:translateX(-50%);*/
@@ -465,7 +455,7 @@ table {
 	background-color:#4c4f5a;
 	border-radius:10px;
 	color:#fff;
-	/* cursor:pointer;*/
+	cursor:pointer;
 	display:flex;
 	padding:1rem;
 	position:relative;
@@ -481,6 +471,8 @@ table {
 	animation-fill-mode:forwards;
 	opacity:0;
 	box-shadow:1px 1px 5px 1px #000;
+	font-family: 'SBAggroB';
+	font-weight: 300;
 }
 .dialog:hover {
 	background-color:#313444;
@@ -577,6 +569,7 @@ table {
 	color:#fdba05;
 	margin-bottom:10px;
 }
+
 .skill-menu-item,.skill-menu-open-button {
 	background:#EEEEEE;
 	border-radius:100%;
@@ -591,6 +584,7 @@ table {
 	align-items:center;
 	user-select:none;
 	left:50%;
+	font-family:'D2Coding';
 }
 .skill-menu-open {
 	display:none;
@@ -787,6 +781,7 @@ table {
 	animation:fill 1s ease-in-out forwards;
 	z-index:-2;
 	top:30%;
+	
 }
 .database-sqlite {
 	background-image:url("../img/sqlite.png");

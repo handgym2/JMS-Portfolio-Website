@@ -2,22 +2,135 @@
 	background-color: #2d2e35;
 }
 
-.section-3-container{
+/* .windows-screen{
     position: relative;
-    background-color: red;
-    width: 100%;
-    height: 700px;
+    width: 70%;
+    height: 85%;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
- }
- 
- .portfolio-card{
-     position: absolute;
-     width: 80%;
-     height: 700px;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%,-50%);
-     background-color: blue;
- }
+    border: 5.5px solid #fdba05;
+    border-radius: 10px;
+    background-color: rgb(24 25 32 / 34%);
+}
+
+.database-folder{
+    display: none;
+}
+.database-folder-label{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    margin: auto;
+    background-color: #fdba05;
+    border-radius: 0 3px 3px 3px;
+
+    margin-bottom: -8px;
+    margin-top: 50px;
+    left: 25px;
+    position: absolute;
+    cursor: pointer;
+    transition-duration: 500ms;
+    
+}
+
+.database-folder-label::before{
+    content: '';
+    width: 50%;
+    height: 0.2em;
+    border-radius: 0 20px 0 0;
+    background-color: #fdba05;
+    position: absolute;
+    top: -0.5em;
+    left: 0px;
+}
+
+.database-folder:checked ~ .database-popup { 
+    position: relative;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: test 0.2s forwards;
+}
+.database-folder:checked ~  .database-popup .database-folder-label-close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 0;
+    left: 100%;
+}
+
+.database-folder-label-close{
+    background-color: #fdba05;
+    z-index: -2;
+    cursor: pointer;
+}
+
+
+.database-popup{
+    background-color: white;
+    z-index: -2;
+}
+
+@keyframes test {
+    0%{
+        width: 5%;
+        height: 5%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+} */ */
+
+/* .foldertab-container{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    left: 0px;
+    top: 3.5%;
+    margin-left: 0;
+}
+
+.foldertab{
+    position: absolute;
+    width: 50%;
+    height: 55%;
+    border: 0.5px solid #fdba05;
+}
+
+.foldertab:nth-child(1){
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #669AE1;
+}
+.foldertab:nth-child(2){
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    background-color: #FC913A;
+}
+.foldertab:nth-child(3){
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #FE4365;
+}
+.foldertab:nth-child(4){
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background-color: #C49CDE;
+}
+.foldertab:nth-child(5){
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #70CC72;
+}
+ */

@@ -261,84 +261,74 @@
           </div>
       </section>
       <section id="section-3" class="section">
-          <!-- <h1 class="section-3-h1" data-scroll="toggle(.fromRightIn, .fromRightOut)">가나다라마바사아자차카타파하</h1> -->
-        <!-- <h1 class="section-3-h1" data-scroll="toggle(.fromRightIn, .fromRightOut)">가나다라마바사아자차카타파하</h1> -->
-        <!-- <div class="windows-screen">
-          <input type="checkbox" href="#" class="database-folder" id="database-folder">
-          <label class="database-folder-label" for="database-folder" id="database-folder-label">
-            Database
-          </label>
-          <div class="database-popup">
-            <input type="checkbox" href="#" class="database-folder" id="database-folder">
-            <label class="database-folder-label-close" for="database-folder" id="database-folder-label-close">
-            </label>
-          </div>
-          
-        </div> -->
-        
-        <!-- <div class="foldertab-container">
-        <div class="foldertab database"></div>
-        <div class="foldertab network"></div>
-        <div class="foldertab"></div>
-        <div class="foldertab"></div>
-        <div class="foldertab"></div>
-      </div> -->
-      </section>
+        <div class="foldertab-container">
+        <div class="foldertab folder1" onclick="animation_folder1()"><div class="folder-file"></div></div>
+        <div class="foldertab folder2" onclick="animation_folder2()"><div class="folder-file"></div></div>
+        <div class="foldertab folder3" onclick="animation_folder3()"><div class="folder-file"></div></div>
+        <div class="foldertab folder4" onclick="animation_folder4()"><div class="folder-file"></div></div>
+        <div class="foldertab folder5"><div class="folder-file"></div></div>
+      </div>
+    </section>
       <section id="section-4" class="section">
           <h1>Three</h1>
       </section>
-  <script>
-  window.counter = function() {
-    // this refers to the html element with the data-scroll-showCallback tag
-    
-    var span = this.querySelector('span');
-    var current = parseInt(span.textContent);
-    
-    span.textContent = current + 1;
-  };
-  
-  document.addEventListener('DOMContentLoaded', function(){
-    var trigger = new ScrollTrigger({
-      
-      addHeight: true
-      
-    });
-  });
-  
-  // document.getElementById("skill-menu-open").checked = true
-  
-  </script>
-
-<script>
-  var win_h = $(window).height();
+      <script>
  
- $('.section').each(function(index){
-  
-     $(this).attr("data-index",win_h * index);
-  
- });
-  
- $('.section').on("mousewheel",function(e){
-  
-     var sectionPos = parseInt($(this).attr("data-index"));
-  
-     if(e.originalEvent.wheelDelta >= 0) {
-  
-         $("html,body").stop().animate({scrollTop:sectionPos - win_h});
-  
-     return false;
-  
-     } else if (e.originalEvent.wheelDelta < 0) {
-  
-         $("html,body").stop().animate({scrollTop:sectionPos + win_h});
-  
-     return false; 
-  
-     }
-  
- });
-
-</script>
+        window.counter = function() {
+          // this refers to the html element with the data-scroll-showCallback tag
+          
+          var span = this.querySelector('span');
+          var current = parseInt(span.textContent);
+          
+          span.textContent = current + 1;
+        };
+        
+        document.addEventListener('DOMContentLoaded', function(){
+          var trigger = new ScrollTrigger({
+            
+            addHeight: true
+            
+          });
+        });
+        // window.addEventListener("wheel", function(e){
+        // 	e.preventDefault();
+        // },{passive : false});
+        </script>
+        
+        <script>
+        var  folder1 = document.getElementsByClassName("foldertab folder1")[0];
+        var  folder2 = document.getElementsByClassName("foldertab folder2")[0];
+        var  folder3 = document.getElementsByClassName("foldertab folder3")[0];
+        var  folder4 = document.getElementsByClassName("foldertab folder4")[0];
+        function animation_folder1(){
+               folder1.classList.toggle("animation-folder1");
+               folder2.classList.remove("animation-folder2");
+               folder3.classList.remove("animation-folder3");
+               folder4.classList.remove("animation-folder4");
+        }
+        function animation_folder2(){
+               folder2.classList.toggle("animation-folder2");
+               folder1.classList.remove("animation-folder1");
+               folder3.classList.remove("animation-folder3");
+               folder4.classList.remove("animation-folder4");
+        }
+        function animation_folder3(){
+               folder3.classList.toggle("animation-folder3");
+               folder2.classList.remove("animation-folder2");
+               folder1.classList.remove("animation-folder1");
+               folder4.classList.remove("animation-folder4");
+        }
+        function animation_folder4(){
+               folder4.classList.toggle("animation-folder4");
+               folder3.classList.remove("animation-folder3");
+               folder2.classList.remove("animation-folder2");
+               folder1.classList.remove("animation-folder1");
+        }
+          // let click = document.querySelector(".foldertab:nth-child(1)");
+          // click.onclick = function(){
+          //   alert('asd')
+          // }
+        </script>
         {{ template "footer.html" .}}
 </body>
 

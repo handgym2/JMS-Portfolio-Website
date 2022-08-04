@@ -1518,7 +1518,8 @@
 	font-size:30px;
 	font-weight:600;
 	box-shadow:5px 5px 2px 1px #000;
-	animation:shake-vertical 5s linear infinite both;
+	animation:shake-vertical 5s linear infinite ;
+	will-change: transform;
 }
 .bubbly::after {
 	content:'';

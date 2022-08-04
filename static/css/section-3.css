@@ -24,10 +24,7 @@
 }
 
 .foldertab{
-    position: absolute;
-    width: 50%;
-    height: 55%;
-    /* border: 0.5px solid #fdba05; */
+    border-bottom-right-radius: 15px;
 }
 
 
@@ -178,10 +175,7 @@
     left: 100%;
     top: 0;
 }
-.foldertab:nth-child(5):hover{
-    transition-duration: 150ms;
-    transform: scale(1.05,1.0);
-}
+
 
 
 @keyframes animation-folder {

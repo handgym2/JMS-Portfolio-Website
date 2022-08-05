@@ -2,17 +2,6 @@
 	background-color: #2d2e35;
 }
 
-.windows-screen{
-    position: relative;
-    width: 70%;
-    height: 85%;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    border: 5.5px solid #fdba05;
-    border-radius: 10px;
-    background-color: rgb(24 25 32 / 34%);
-}
 
 .foldertab-container{
     position: relative;
@@ -26,6 +15,30 @@
 .foldertab{
     border-bottom-right-radius: 15px;
 }
+.foldertab::before{
+    font-family: 'D2Coding';
+    letter-spacing: 7px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 3%;
+    height: 30%;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    left: 99.95%;
+    top: 0;
+    cursor: pointer;
+}
+.foldertab:hover:not(:last-child){
+    transition-duration: 150ms;
+    transform: scale(1.05,1.0);
+    will-change: transform;
+}
+
+
 
 
 .foldertab:nth-child(1){
@@ -35,34 +48,10 @@
     background-color: #976f03;
 }
 .foldertab:nth-child(1)::before{
-    font-family: 'D2Coding';
-    letter-spacing: 7px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     content: 'test1';
-    width: 3%;
-    height: 30%;
-    border-radius: 0 15px 15px 0;
     background-color: #976f03;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    cursor: pointer;
+    
 }
-.foldertab:nth-child(1):hover{
-    transition-duration: 150ms;
-    transform: scale(1.05,1.0);
-}
-/* .foldertab:nth-child(1):active{
-    transform: scale(1.9, 1.0);
-    animation-fill-mode: forwards;
-} */
-
-
 
 .foldertab:nth-child(2){
     position: absolute;
@@ -71,27 +60,8 @@
     background-color: #b18203;
 }
 .foldertab:nth-child(2)::before{
-    font-family: 'D2Coding';
-    letter-spacing: 7px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     content: 'test2';
-    width: 3%;
-    height: 30%;
-    border-radius: 0 15px 15px 0;
     background-color: #b18203;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    cursor: pointer;
-}
-.foldertab:nth-child(2):hover{
-    transition-duration: 150ms;
-    transform: scale(1.05,1.0);
 }
 .foldertab:nth-child(3){
     position: absolute;
@@ -100,27 +70,8 @@
     background-color: #ca9404;
 }
 .foldertab:nth-child(3)::before{
-    font-family: 'D2Coding';
-    letter-spacing: 7px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     content: 'test3';
-    width: 3%;
-    height: 30%;
-    border-radius: 0 15px 15px 0;
     background-color: #ca9404;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    cursor: pointer;
-}
-.foldertab:nth-child(3):hover{
-    transition-duration: 150ms;
-    transform: scale(1.05,1.0);
 }
 .foldertab:nth-child(4){
     position: absolute;
@@ -129,27 +80,8 @@
     background-color: #e3a704;
 }
 .foldertab:nth-child(4)::before{
-    font-family: 'D2Coding';
-    letter-spacing: 7px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     content: 'test4';
-    width: 3%;
-    height: 30%;
-    border-radius: 0 15px 15px 0;
     background-color: #e3a704;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    cursor: pointer;
-}
-.foldertab:nth-child(4):hover{
-    transition-duration: 150ms;
-    transform: scale(1.05,1.0);
 }
 .foldertab:nth-child(5){
     position: absolute;
@@ -158,22 +90,8 @@
     background-color: #fdba05;
 }
 .foldertab:nth-child(5)::before{
-    font-family: 'D2Coding';
-    letter-spacing: 7px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     content: 'test5';
-    width: 3%;
-    height: 30%;
-    border-radius: 0 15px 15px 0;
     background-color: #fdba05;
-    position: absolute;
-    left: 100%;
-    top: 0;
 }
 
 
@@ -186,20 +104,27 @@
         z-index: 2;
         width: 75%;
         height: 100%;
+        background-color: #fdba05;
     }
 }
 
 .animation-folder1, .animation-folder2, 
 .animation-folder3, .animation-folder4{
-    animation: animation-folder 1s ease-in-out forwards;
+    animation: animation-folder 0.6s ease-in-out forwards;
+}
+.animation-folder1::before, .animation-folder2::before, 
+.animation-folder3::before, .animation-folder4::before{
+    animation: change-color 0.6s ease-in-out forwards;
 }
 
-
+@keyframes change-color{
+    100%{background-color: #fdba05;}
+}
 .folder-file{
     width: 96.5%;
     height: 95%;
     margin-top: 20px;
-    /* background-color: #fff; */
     background-color: hsl(0, 0%, 85%);
+    box-shadow:0px 0px 15px rgb(0 0 0 / 70%);
     position: absolute;
 }

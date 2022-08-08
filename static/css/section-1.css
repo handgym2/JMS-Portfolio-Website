@@ -40,6 +40,12 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @keyframes fadeInUp {
 	0% {
 		opacity:0;
@@ -536,7 +542,7 @@ table {
 /* section-2-start */
 /* .section-2-h1{display:flex;justify-content:center;align-items:center;color:yellow;font-size: 40px;}*/
 .fromBottomIn {
-	transition:transform 1.0s ease,opacity 1.5s ease;
+	transition:transform 1.0s ease,opacity 1.0s ease;
 	transform:translate(0,0);
 	opacity:1.0;
 }
@@ -546,13 +552,25 @@ table {
 	opacity:0.0;
 }
 .fromRightIn {
-	transition:transform 1.0s ease,opacity 1.0s ease;
+	transition:transform 400ms ease,opacity 1.0s ease;
 	transform:translate(0,0);
 	opacity:1.0;
 }
 .fromRightOut {
-	transition:transform 1.0s ease,opacity 1.0s ease;
+	transition:transform 400ms ease,opacity 1.0s ease;
 	transform:translate(10px,0);
 	opacity: 0.0;
 }
+.fromLeftIn
+{
+	transition: transform 400ms ease, opacity 1.0s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
 
+.fromLeftOut
+{
+	transition: transform 400ms ease, opacity 1.0s ease;
+	transform: translate(-10px,0);
+	opacity: 0.0;
+}

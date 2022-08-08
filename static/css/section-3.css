@@ -110,11 +110,11 @@
 
 .animation-folder1, .animation-folder2, 
 .animation-folder3, .animation-folder4{
-    animation: animation-folder 0.6s ease-in-out forwards;
+    animation: animation-folder 0.6s ease-in forwards;
 }
 .animation-folder1::before, .animation-folder2::before, 
 .animation-folder3::before, .animation-folder4::before{
-    animation: change-color 0.6s ease-in-out forwards;
+    animation: change-color 0.6s ease-in forwards;
 }
 
 @keyframes change-color{

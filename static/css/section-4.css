@@ -1,0 +1,88 @@
+.section:nth-child(4) {
+	background-color:rgb(24 25 32 / 34%);
+	/* font-size:12px; */
+}
+
+.section-4-h1{
+    text-align:center;
+	/* border:1px solid #000000;*/
+	padding-top:3%;
+	font-family:'SBAggroB';
+	font-size:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#fdba05;
+	margin-bottom:10px;
+}
+
+.left-container{
+    width: 48%;
+    height: 50%;
+    position: absolute;
+
+}
+
+
+
+.left-content{
+    position: relative;
+    color: #fdba05 ;
+    font-size: 40px;
+    font-family:'BMDOHYEON';
+    text-align: end;
+    top: 50%;
+    line-height: 1.7;
+}
+.sayer{
+    font-size: 20px;
+}
+
+.right-container{
+    width: 48%;
+    height: 50%;
+    position: absolute;
+    left: 52%;
+}
+
+.right-top-content{
+    position: relative;
+    color: #fdba05 ;
+    font-size: 32px;
+    font-family:'BMDOHYEON';
+    top: 40%;
+    line-height: 1.7;
+}
+
+.right-bottom-content{
+    position: relative;
+    color: #fdba05 ;
+    font-size: 25px;
+    font-family:'BMDOHYEON';
+    top: 40%;
+    line-height: 1.7;
+    padding-left: 2%;
+}
+
+
+.extendbar{
+    animation: extendbar;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.centerbar{
+    position: absolute;
+    width: 5px;
+    height: 0%;
+    left: 50%;
+    background-color: #fdba05;
+}
+
+@keyframes extendbar {
+    100%{
+        height: 70%;
+    }
+}

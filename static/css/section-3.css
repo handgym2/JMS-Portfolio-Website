@@ -48,7 +48,7 @@
     background-color: #976f03;
 }
 .foldertab:nth-child(1)::before{
-    content: 'test1';
+    content: 'FILE 1';
     background-color: #976f03;
     
 }
@@ -60,7 +60,7 @@
     background-color: #b18203;
 }
 .foldertab:nth-child(2)::before{
-    content: 'test2';
+    content: 'FILE 2';
     background-color: #b18203;
 }
 .foldertab:nth-child(3){
@@ -70,7 +70,7 @@
     background-color: #ca9404;
 }
 .foldertab:nth-child(3)::before{
-    content: 'test3';
+    content: 'FILE 3';
     background-color: #ca9404;
 }
 .foldertab:nth-child(4){
@@ -80,7 +80,7 @@
     background-color: #e3a704;
 }
 .foldertab:nth-child(4)::before{
-    content: 'test4';
+    content: 'FILE 4';
     background-color: #e3a704;
 }
 .foldertab:nth-child(5){
@@ -90,11 +90,9 @@
     background-color: #fdba05;
 }
 .foldertab:nth-child(5)::before{
-    content: 'test5';
+    content: 'FILE 5';
     background-color: #fdba05;
 }
-
-
 
 @keyframes animation-folder {
     25%{
@@ -127,4 +125,129 @@
     background-color: hsl(0, 0%, 85%);
     box-shadow:0px 0px 15px rgb(0 0 0 / 70%);
     position: absolute;
+}
+
+.file-content{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 70%;
+    background-color: white;
+    border-left: 5px solid #fdba05;
+}
+
+.file-img{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+}
+
+.file-title{
+    position: relative;
+    font-family: 'BMDOHYEON';
+    font-size: 27px;
+    top: 45px;
+    /* width: 95%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-context{
+    position:relative;
+    font-size: 20px;
+    font-family: 'BMDOHYEON';
+    top: 65px;
+    width: 94%;
+    left: 5%;
+}
+
+.file-hashtag{
+    position:relative;
+    font-size: 25px;
+    /* font-family: 'BMDOHYEON'; */
+    font-family: "Calibri, sans-serif";
+    width: 90%;
+    left: 5%;
+    font-style: oblique;
+    font-weight: 700;
+    text-decoration: solid underline black 1px;
+    text-underline-offset:2.2px;
+    top: 450px;
+}
+
+
+.file-tags{
+	margin:0;
+	padding:0;
+	position:relative;
+	/* top: 0px; */
+	list-style:none;
+	}
+
+.file-tags li, .file-tags div{
+    float:left;
+    height:30px;
+    line-height:32px;
+    position:relative;
+    font-size:19px;
+    text-align: end;
+    font-family: 'BMDOHYEON';
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+
+.file-tags div{
+    margin-left: 13px;
+    padding: 4px 11px 3px 25px;
+    background: #fdba05;
+    text-decoration: none;
+    border-radius: 45px;
+	} 
+
+
+.file-tags div:before{
+	content:"";
+	float:left;
+	position:absolute;
+	top:0;
+	left:-12px;
+	width:0;
+	height:0;
+	}
+
+
+.file-tags div:after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    float: left;
+    width: 5px;
+    height: 5px;
+	border-radius:2px;
+	background:#fff;
+	box-shadow:-1px -1px 2px #976f03;
+	}
+
+.download-pdf{
+    position: relative;
+    top: 210px;
+    width: 94%;
+}
+.download-pdf a{
+    position: absolute;
+    font-size: 23px;
+    font-family: 'BMDOHYEON';
+    left: 5%;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    background-color: #fdba05;
+    text-decoration: none;
+    color: black;
 }

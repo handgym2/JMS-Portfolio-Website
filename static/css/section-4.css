@@ -62,9 +62,9 @@
     top: 40%;
     line-height: 1.7;
     padding-left: 2%;
+    list-style-type: "\2713";
+    /* list-style-type:armenian; */
 }
-
-
 .extendbar{
     animation: extendbar;
     animation-duration: 0.75s;

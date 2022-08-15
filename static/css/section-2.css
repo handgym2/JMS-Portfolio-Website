@@ -421,7 +421,7 @@
 	overflow:hidden;
 }
 .languages-python:hover:before {
-	content:"88%";
+	content:"80%";
 	display:flex;
 	justify-content:center;
 	position:absolute;
@@ -431,7 +431,7 @@
 	left:50%;
 	animation:fill 1s ease-in-out forwards;
 	z-index:-2;
-	top:12%;
+	top:20%;
 }
 .languages-gin {
 	background-image:url("../img/gin.png");
@@ -908,7 +908,7 @@
 	overflow:hidden;
 }
 .web-js:hover:before {
-	content:"45%";
+	content:"30%";
 	display:flex;
 	justify-content:center;
 	position:absolute;
@@ -918,7 +918,7 @@
 	left:50%;
 	animation:fill 1s ease-in-out forwards;
 	z-index:-2;
-	top:55%;
+	top:70%;
 }
 .web-nginx {
 	background-image:url("../img/nginx.png");
@@ -1118,7 +1118,7 @@
 	overflow:hidden;
 }
 .cloud-docker:hover:before {
-	content:"80%";
+	content:"70%";
 	display:flex;
 	justify-content:center;
 	position:absolute;
@@ -1128,7 +1128,7 @@
 	left:50%;
 	animation:fill 1s ease-in-out forwards;
 	z-index:-2;
-	top:20%;
+	top:30%;
 }
 .cloud-aws {
 	background-image:url("../img/aws.png");

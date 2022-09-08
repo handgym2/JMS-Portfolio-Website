@@ -180,8 +180,8 @@
 .file-tags{
 	margin:0;
 	padding:0;
-	position:relative;
-	/* top: 0px; */
+	position:absolute;
+	top: 40%;
 	list-style:none;
 	}
 
@@ -232,8 +232,8 @@
 	}
 
 .download-pdf{
-    position: relative;
-    top: 210px;
+    position: absolute;
+    top: 68%;
     width: 94%;
 }
 .download-pdf a{

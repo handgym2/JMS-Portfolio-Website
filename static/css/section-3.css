@@ -143,10 +143,10 @@
 }
 
 .file-title{
-    position: relative;
+    position: absolute;
     font-family: 'BMDOHYEON';
     font-size: 27px;
-    top: 45px;
+    top: 5%;
     /* width: 95%; */
     display: flex;
     justify-content: center;
@@ -154,16 +154,16 @@
 }
 
 .file-context{
-    position:relative;
+    position:absolute;
     font-size: 20px;
     font-family: 'BMDOHYEON';
-    top: 65px;
+    top: 16%;
     width: 94%;
     left: 5%;
 }
 
 .file-hashtag{
-    position:relative;
+    position: absolute;
     font-size: 25px;
     /* font-family: 'BMDOHYEON'; */
     font-family: "Calibri, sans-serif";
@@ -173,7 +173,7 @@
     font-weight: 700;
     text-decoration: solid underline black 1px;
     text-underline-offset:2.2px;
-    top: 450px;
+    top: 83%;
 }
 
 

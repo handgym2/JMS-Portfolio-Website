@@ -85,7 +85,7 @@
 }
 .foldertab:nth-child(5){
     position: absolute;
-    width: 75%;
+    width: 75.5%;
     height: 100%;
     background-color: #fdba05;
 }
@@ -96,10 +96,10 @@
 
 @keyframes animation-folder {
     25%{
-        z-index: 2;
+        z-index: 0;
     }
     100%{
-        z-index: 2;
+        z-index: 1;
         width: 75%;
         height: 100%;
         background-color: #fdba05;

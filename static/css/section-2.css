@@ -222,7 +222,7 @@
 	height:150px;
 	background:#669AE1;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:50%;
 }
@@ -242,7 +242,7 @@
 	height:150px;
 	background:#669AE1;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top: 40%;
 }
@@ -408,7 +408,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:70%;
 }
@@ -429,7 +429,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:20%;
 }
@@ -450,7 +450,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:70%;
 }
@@ -483,7 +483,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:25%;
 }
@@ -504,7 +504,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:45%;
 }
@@ -525,7 +525,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:35%;
 }
@@ -546,7 +546,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:30%;
 }
@@ -567,7 +567,7 @@
 	height:150px;
 	background:#FC913A;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top: 30%;
 }
@@ -874,7 +874,7 @@
 	height:150px;
 	background:#FE4365;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:25%;
 }
@@ -895,7 +895,7 @@
 	height:150px;
 	background:#FE4365;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:25%;
 }
@@ -916,7 +916,7 @@
 	height:150px;
 	background:#FE4365;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:70%;
 }
@@ -937,7 +937,7 @@
 	height:150px;
 	background:#FE4365;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top: 55%;
 }
@@ -1105,7 +1105,7 @@
 	height:150px;
 	background:#C49CDE;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:25%;
 }
@@ -1126,7 +1126,7 @@
 	height:150px;
 	background:#C49CDE;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:30%;
 }
@@ -1147,7 +1147,7 @@
 	height:150px;
 	background:#C49CDE;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top: 55%;
 }
@@ -1300,7 +1300,7 @@
 	height:150px;
 	background:#70CC72;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:25%;
 }
@@ -1321,7 +1321,7 @@
 	height:150px;
 	background:#70CC72;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:30%;
 }
@@ -1342,7 +1342,7 @@
 	height:150px;
 	background:#70CC72;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top:55%;
 }
@@ -1363,7 +1363,7 @@
 	height:150px;
 	background:#70CC72;
 	left:50%;
-	animation:fill 1s ease-in-out forwards;
+	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
 	top: 45%;
 }

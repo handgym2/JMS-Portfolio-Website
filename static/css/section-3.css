@@ -251,3 +251,7 @@
     text-decoration: none;
     color: black;
 }
+
+.download-pdf:hover a{
+    background-color: #e3a704;
+}

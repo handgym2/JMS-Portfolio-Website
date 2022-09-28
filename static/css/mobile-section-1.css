@@ -1,79 +1,42 @@
-/* html{overflow: hidden;}*/
-/* @media screen and (min-width: 992px) { */
-@media screen and (min-width: 771px) {
 html,body {
 	width:100%;
-	height:100%;
+	height:100vh;
 	/* min-width:800px;min-height:700px;*/
 }
-html {
+/* html {
 	scroll-snap-type:y mandatory;
 	scroll-behavior: smooth;
-}
+} */
 body {
-	background-attachment:fixed;
+	/* background-attachment:fixed; */
 	overflow-x:hidden;
 	background:#2d2e35 ;
 	margin:0;
 }
+
 .section {
 	width:100%;
 	height:100%;
 	scroll-snap-align:center;
 	scroll-snap-stop: always;
 }
-}
-.section:nth-child(3) {
-	background-color: #2d2e35;
-}
-.section:nth-child(4) {
-	background:#2d2e35;
-	font-size:12px;
-}
-@font-face {
-	font-family:'SBAggroB';
-	src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-	font-weight:normal;
-	font-style:normal;
-}
-@font-face {
-    font-family: 'D2Coding';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'BMDOHYEON';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@keyframes fadeInUp {
-	0% {
-		opacity:0;
-		transform:translate3d(0,100%,0);
-		color:#fdba05;
-	}
-	to {
-		opacity:1;
-		transform:translateZ(0);
-		color:#fdba05;
-	}
-}
-.Header-content {
-	font-family:'SBAggroB';
-	font-size:60px;
+
+.Header-content{
+    font-family:'SBAggroB';
+	font-size:50px;
 	display:block;
 	margin:0;
 	text-align:center;
 	animation:fadeInUp 1s;
 	padding:3.6%;
 	color: #fdba05;
+    padding-top: 3%;
+    margin-bottom: -20px;
 }
-/* Terminal Animation */
+
 .number1 {
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	word-break:break-word;
 	padding:1.2px;
 	user-select:none;
@@ -93,7 +56,7 @@ body {
 	color:transparent;
 	user-select:none;
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	/* color:white;*/
 	word-break:break-word;
 	border-color:inherit;
@@ -119,7 +82,7 @@ body {
 }
 .number2 {
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	word-break:break-word;
 	padding:1.2px;
 	user-select:none;
@@ -138,7 +101,7 @@ body {
 	position:absolute;
 	color:transparent;
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	/* color:white;*/
 	word-break:break-word;
 	border-color:inherit;
@@ -167,7 +130,7 @@ body {
 }
 .number3 {
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	word-break:break-word;
 	padding:1.2px;
 	user-select:none;
@@ -186,7 +149,7 @@ body {
 	position:absolute;
 	color:transparent;
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	/* color:white;*/
 	word-break:break-word;
 	border-color:inherit;
@@ -215,7 +178,7 @@ body {
 }
 .number4 {
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	word-break:break-word;
 	padding:1.2px;
 	user-select:none;
@@ -234,7 +197,7 @@ body {
 	position:absolute;
 	color:transparent;
 	font-family:'D2Coding',monospace;
-	font-size:19px;
+	font-size:15px;
 	/* color:white;*/
 	word-break:break-word;
 	border-color:inherit;
@@ -261,58 +224,11 @@ body {
 	animation-fill-mode:forwards;
 	/* content:"|";animation:blink 600ms linear infinite alternate;*/
 }
-@keyframes typing {
-	0% {
-		width:0%;
-		color:white;
-	}
-	50% {
-		width:100%;
-		color:white;
-	}
-	/* 75%{animation-delay: 1.5s;}*/
-	100% {
-		width:100%;
-		color:white;
-	}
-}
-@keyframes hide {
-	0% {
-		opacity:0;
-	}
-	25% {
-		opacity:0;
-	}
-	38% {
-		opacity:1;
-	}
-	50% {
-		opacity:1;
-	}
-	90% {
-		opacity:1;
-	}
-	100% {
-		height:0;
-		opacity: 1;
-	}
-}
-/* Terminal Animation End */
-td {
-	display:table-cell;
-	vertical-align:inherit;
-}
-table {
-	padding:1%;
-	background-color:#282a36;
-	width:auto;
-	border-radius: 10px;
-}
-/* Terminal Design */
+
 .terminal {
 	box-shadow:1px 1px 40px rgb(0 0 0 / 30%);
 	margin:0 auto;
-	max-width:650px;
+	max-width:95%;
 }
 .window-buttons {
 	background-color:#fc625d;
@@ -374,10 +290,9 @@ table {
 	padding:0.5rem;
 	white-space: nowrap;
 }
-/* Terminal Design End */
-/* contact me */
+
 .contact_me {
-	font-size:40px;
+	font-size:30px;
 	/* font-weight:bold;*/
 	display:block;
 	margin:0;
@@ -392,8 +307,9 @@ table {
 	animation:fadeInUp 1s 1;
 	animation-delay:11.2s;
 	animation-fill-mode:forwards;
+    margin-top: 5px;
 }
-/* contact me end */
+
 .contact_group li {
 	/* position:relative;justify-content:center;text-align:center;display:block;margin:0;align-items:center;*/
 	/* flex-direction:column;*/
@@ -448,9 +364,12 @@ table {
 	display:flex;
 	justify-content:center;
 	align-items:center;
+    position: absolute;
+    height: 38%;
+    width: 100%;
 }
 .dialogs {
-	display:grid;
+	display:inline-block;
 	grid-gap:30px;
 	grid-template-columns:repeat(3,1fr);
 	margin-top:1%;
@@ -463,7 +382,7 @@ table {
 	color:#fff;
 	/* cursor:pointer;*/
 	display:flex;
-	padding:1rem;
+	padding:8.5px;
 	position:relative;
 	text-decoration:none;
 	width:13rem;
@@ -479,6 +398,7 @@ table {
 	box-shadow:1px 1px 5px 1px #000;
 	font-family:'BMDOHYEON';
 	font-weight: 300;
+    margin-top: 13px;
 }
 .dialog:hover {
 	background-color:#313444;
@@ -539,40 +459,4 @@ table {
 	display:inline-block;
 	margin-right:15px;
 	padding: 0.8rem;
-}
-/* section-1-end */
-/* section-2-start */
-/* .section-2-h1{display:flex;justify-content:center;align-items:center;color:yellow;font-size: 40px;}*/
-.fromBottomIn {
-	transition:transform 1.0s ease,opacity 1.0s ease;
-	transform:translate(0,0);
-	opacity:1.0;
-}
-.fromBottomOut {
-	transition:transform 1.0s ease,opacity 1.0s ease;
-	transform:translate(0,10px);
-	opacity:0.0;
-}
-.fromRightIn {
-	transition:transform 400ms ease,opacity 1.0s ease;
-	transform:translate(0,0);
-	opacity:1.0;
-}
-.fromRightOut {
-	transition:transform 400ms ease,opacity 1.0s ease;
-	transform:translate(10px,0);
-	opacity: 0.0;
-}
-.fromLeftIn
-{
-	transition: transform 400ms ease, opacity 1.0s ease;
-	transform: translate(0,0);
-	opacity: 1.0;
-}
-
-.fromLeftOut
-{
-	transition: transform 400ms ease, opacity 1.0s ease;
-	transform: translate(-10px,0);
-	opacity: 0.0;
 }

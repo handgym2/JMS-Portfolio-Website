@@ -1,0 +1,212 @@
+.section-2-h1 {
+	text-align:center;
+	/* border:1px solid #000000;*/
+	padding-top:3%;
+	font-family:'SBAggroB';
+	font-size:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#fdba05;
+	margin-bottom:-15px;
+}
+.section-2-h2{
+    text-align:center;
+	/* border:1px solid #000000;*/
+	/* padding-top:0.3%; */
+	font-family:'SBAggroB';
+	font-size:30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#fdba05;
+	margin-bottom:10px;
+}
+
+.skill-menu-box{
+    display: none;
+}
+
+.skill-menu-item{
+    position: relative;
+    background-color: red;
+}
+
+.extendbar{
+    animation: extendbar;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+
+.centerbar-1{
+    position: relative;
+    width: 6px;
+    left: 0;
+    top: 4%;
+    background-color: #fdba05;
+}
+
+.mobile-progress-bar{
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+
+.progress-bar-skill1{
+    top: 10%;
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #dedede;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.progress-bar-skill2{
+    top: 20%;
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #dedede;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.progress-bar-skill3{
+    top: 30%;
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #dedede;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.progress-bar-skill4{
+    top: 40%;
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #dedede;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.progress-bar-skill5{
+    top: 50%;
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #dedede;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill1{
+    width: 72%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill1::after{
+    content: "80%";
+    text-align: end;
+    position: relative;
+    left: 50%;
+}
+.progress-skill2{
+    width: 65%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill2::after{
+    content: "75%";
+    text-align: end;
+    position: relative;
+    left: 50%;
+}
+.progress-skill3{
+    width: 65%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill3::after{
+    content: "75%";
+    text-align: end;
+    position: relative;
+    left: 54%;
+}
+.progress-skill4{
+    width: 65%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill4::after{
+    content: "75%";
+    text-align: end;
+    position: relative;
+    left: 51%;
+}
+.progress-skill5{
+    width: 62%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+}
+.progress-skill5::after{
+    content: "70%";
+    text-align: end;
+    position: relative;
+    left: 45%;
+}
+
+
+/* .progress-bar .progress {
+    width: 72%; 
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    background-color: #fdba05;
+    color: #111;
+} */
+@keyframes extendbar {
+    100%{
+        height: 70%;
+    }
+}

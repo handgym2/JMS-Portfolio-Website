@@ -1,3 +1,5 @@
+/* @media screen and (min-width: 992px) { */
+@media screen and (min-width: 771px) {
 .section:nth-child(3) {
 	background-color: #2d2e35;
 }
@@ -254,4 +256,5 @@
 
 .download-pdf:hover a{
     background-color: #e3a704;
+}
 }

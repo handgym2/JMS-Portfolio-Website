@@ -1,0 +1,56 @@
+.section-4-h1{
+    text-align:center;
+	/* border:1px solid #000000;*/
+	padding-top:3%;
+	font-family:'SBAggroB';
+	font-size:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#fdba05;
+	margin-bottom:10px;
+    margin-top: 25%;
+}
+
+.section:nth-child(5){
+    height: 79%;
+    width: 100%;
+}
+
+.left-container{
+    display: none;
+}
+
+.right-container{
+    position: relative;
+    top: 10%;
+}
+
+.right-top-content{
+    font-size: 21px;
+    font-family:'BMDOHYEON';
+    display: flex;
+    justify-content: center;
+    color:#fdba05;
+}
+
+.right-bottom-content{
+    font-size: 18px;
+    font-family:'BMDOHYEON';
+    color:#fdba05;
+    margin-top: 11%;
+}
+
+.fromLeftIn
+{
+	transition: transform 400ms ease, opacity 1.0s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromLeftOut
+{
+	transition: transform 400ms ease, opacity 1.0s ease;
+	transform: translate(-10px,0);
+	opacity: 0.0;
+}

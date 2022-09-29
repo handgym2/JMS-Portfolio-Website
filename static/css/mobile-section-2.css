@@ -1,3 +1,7 @@
+.section:nth-child(2) {
+	background-color:rgb(24 25 32 / 34%);
+}
+
 .section-2-h1 {
 	text-align:center;
 	/* border:1px solid #000000;*/
@@ -51,6 +55,7 @@
     position: relative;
     width: 100%;
     height: 70%;
+    font-family:'SBAggroB';
 }
 
 
@@ -106,107 +111,134 @@
     border-radius: 0 25px 25px 0;
 }
 .progress-skill1{
-    width: 72%; 
+    /* width: 72%;  */
     height: 40px;
     padding: 0;
-    text-align: center;
     background-color: #fdba05;
     color: #111;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 0 25px 25px 0;
 }
 .progress-skill1::after{
     content: "80%";
     text-align: end;
     position: relative;
-    left: 50%;
+    left: 38%;
 }
 .progress-skill2{
     width: 65%; 
     height: 40px;
     padding: 0;
-    text-align: center;
     background-color: #fdba05;
     color: #111;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 0 25px 25px 0;
 }
 .progress-skill2::after{
     content: "75%";
     text-align: end;
     position: relative;
-    left: 50%;
+    left: 48%;
 }
 .progress-skill3{
     width: 65%; 
     height: 40px;
     padding: 0;
-    text-align: center;
     background-color: #fdba05;
     color: #111;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 0 25px 25px 0;
 }
 .progress-skill3::after{
     content: "75%";
     text-align: end;
     position: relative;
-    left: 54%;
+    left: 55%;
 }
 .progress-skill4{
     width: 65%; 
     height: 40px;
     padding: 0;
-    text-align: center;
     background-color: #fdba05;
     color: #111;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 0 25px 25px 0;
 }
 .progress-skill4::after{
     content: "75%";
     text-align: end;
     position: relative;
-    left: 51%;
+    left: 48%;
 }
 .progress-skill5{
     width: 62%; 
     height: 40px;
     padding: 0;
-    text-align: center;
     background-color: #fdba05;
     color: #111;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border-radius: 0 25px 25px 0;
 }
 .progress-skill5::after{
     content: "70%";
     text-align: end;
     position: relative;
-    left: 45%;
+    left: 29%;
 }
 
 
-/* .progress-bar .progress {
-    width: 72%; 
-    height: 40px;
-    padding: 0;
-    text-align: center;
-    background-color: #fdba05;
-    color: #111;
-} */
 @keyframes extendbar {
     100%{
         height: 70%;
+    }
+}
+
+.risebar-skill1{
+    animation: animation_risebar1 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation_risebar1{
+    0%{
+        width: 1%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+.risebar-skill2{
+    animation: animation_risebar2 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation_risebar2{
+    0%{
+        width: 1%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+.risebar-skill3{
+    animation: animation_risebar3 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation_risebar3{
+    0%{
+        width: 1%;
+    }
+    100%{
+        width: 62%;
     }
 }

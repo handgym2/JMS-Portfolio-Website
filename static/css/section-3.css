@@ -4,6 +4,9 @@
 	background-color: #2d2e35;
 }
 
+.slider{
+    display: none;
+}
 
 .foldertab-container{
     position: relative;

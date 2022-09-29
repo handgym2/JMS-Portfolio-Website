@@ -228,7 +228,7 @@ body {
 .terminal {
 	box-shadow:1px 1px 40px rgb(0 0 0 / 30%);
 	margin:0 auto;
-	max-width:95%;
+	max-width:93%;
 }
 .window-buttons {
 	background-color:#fc625d;

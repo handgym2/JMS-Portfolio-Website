@@ -1102,6 +1102,12 @@
 	font-size:15px;
 	animation:hidden 5.8s;
 }
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(46) {
+	transform:translate3d(-306.0534px,247.52414px,0);
+	border:3.5px solid #C49CDE;
+	font-size:15px;
+	animation:hidden 5.9s;
+}
 .cloud-github {
 	background-image:url("../img/github.png");
 	background-size:85px;
@@ -1144,15 +1150,15 @@
 	z-index:-2;
 	top:30%;
 }
-.cloud-aws {
-	background-image:url("../img/aws.png");
+.cloud-gcp {
+	background-image:url("../img/GCP.png");
 	background-size:85px;
 	background-repeat:no-repeat;
 	background-color:#fff;
 	background-position:center;
 	overflow:hidden;
 }
-.cloud-aws:hover:before {
+.cloud-gcp:hover:before {
 	content:"45%";
 	display:flex;
 	justify-content:center;
@@ -1165,9 +1171,30 @@
 	z-index:-2;
 	top: 55%;
 }
+.cloud-k8s {
+	background-image:url("../img/k8s.png");
+	background-size:67px;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	background-position:center;
+	overflow:hidden;
+}
+.cloud-k8s:hover:before {
+	content:"60%";
+	display:flex;
+	justify-content:center;
+	position:absolute;
+	width:150px;
+	height:150px;
+	background:#C49CDE;
+	left:50%;
+	animation:fill 0.4s ease-in-out forwards;
+	z-index:-2;
+	top: 40%;
+}
 /* Cloud item end */
 /* Cloud stick start */
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(46) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(47) {
 	position:absolute;
 	top:141px;
 	left:-40px;
@@ -1188,7 +1215,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(47) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(48) {
 	position:absolute;
 	top:177px;
 	left:-36px;
@@ -1210,7 +1237,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(48) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(49) {
 	position:absolute;
 	top:205px;
 	left:-74px;
@@ -1232,7 +1259,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(49) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(50) {
 	position:absolute;
 	top:258px;
 	left:-117px;
@@ -1254,9 +1281,31 @@
 	background-color:transparent;
 	transform-origin: left bottom;
 }
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(51) {
+	position:absolute;
+	top:316px;
+	left:-148px;
+	height:17%;
+	width:2px;
+	border-radius:0%;
+	background-color:transparent;
+	transform:rotate(270deg);
+	z-index:-2;
+}
+.skill-menu-open:checked ~ .skill-menu-item .cloud-stick4 {
+	position:absolute;
+	left:80px;
+	height:100%;
+	width:2px;
+	border-radius:0%;
+	animation:Cloud-progressAnimation 1.3s ease-in-out forwards;
+	animation-delay:3.7s;
+	background-color:transparent;
+	transform-origin: left bottom;
+}
 /* Cloud stick end */
 /* Cloud tree end */
-.cloud-main-stick,.cloud-stick1,.cloud-stick2,.cloud-stick3 {
+.cloud-main-stick,.cloud-stick1,.cloud-stick2,.cloud-stick3,.cloud-stick4 {
 	position:absolute;
 	left:50%;
 }
@@ -1273,25 +1322,25 @@
 }
 /* Network Tree start */
 /* Network item start */
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(50) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(52) {
 	transform:translate3d(-255.0534px,-95.47586px,0);
 	border:3.5px solid #70CC72;
 	font-size:15px;
 	animation:hidden 4.8s;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(51) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(53) {
 	transform:translate3d(-373.0534px,-95.47586px,0);
 	border:3.5px solid #70CC72;
 	font-size:15px;
 	animation:hidden 5.7s;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(52) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(54) {
 	transform:translate3d(-312.0534px,36.52414px,0);
 	border:3.5px solid #70CC72;
 	font-size:15px;
 	animation:hidden 5.2s;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(53) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(55) {
 	transform:translate3d(-433.0534px,36.52414px,0);
 	border:3.5px solid #70CC72;
 	font-size:15px;
@@ -1383,7 +1432,7 @@
 }
 /* Network item end */
 /* Network stick start */
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(54) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(56) {
 	position:absolute;
 	top:-29px;
 	left:-100px;
@@ -1404,7 +1453,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(55) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(57) {
 	position:absolute;
 	top:0px;
 	left:-110px;
@@ -1426,7 +1475,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(56) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(58) {
 	position:absolute;
 	top:8px;
 	left:-163px;
@@ -1448,7 +1497,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(57) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(59) {
 	position:absolute;
 	top:0px;
 	left:-228px;
@@ -1470,7 +1519,7 @@
 	background-color:transparent;
 	transform-origin:left bottom;
 }
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(58) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(60) {
 	position:absolute;
 	top:9px;
 	left:-293px;
@@ -1510,7 +1559,7 @@
 	}
 }
 /* Bubbly */
-.skill-menu-open:checked ~ .skill-menu-item:nth-child(59) {
+.skill-menu-open:checked ~ .skill-menu-item:nth-child(61) {
 	position:absolute;
 	left:100%;
 	top:0px;
